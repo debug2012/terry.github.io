@@ -44,8 +44,9 @@ scheme: Mist
 
 使用next 自带的disqus配置来开启评论功能
 ```
-disqus_shortname: debug2012 #debug2012是笔者在[disqus](https://www.disqus.com)上注册一个shortname
-```
+disqus_shortname: debug2012
+``` 
+debug2012是笔者在[disqus](https://www.disqus.com)上注册一个shortname
 更多next主题的配置，可以参考 http://theme-next.iissnan.com/getting-started.html
 ### 修改myblog配置
 ```
