@@ -8,7 +8,8 @@ tags: echarts,image
 
 ### 提供了两种类型的接口：
 
-- ###### 把定制页面的echarts图表保存为图片
+###### 把定制页面的echarts图表保存为图片
+
 请求实例：
 ```
 curl http://115.29.188.241:3100/ -d '{"url":"http://115.29.188.241/public/echarts/default.html","funcs":"salesChart,bubbleChart","delay":1000}'
@@ -37,7 +38,8 @@ curl http://115.29.188.241:3100/ -d '{"url":"http://115.29.188.241/public/echart
 ![bubbleChart](http://saas-pubsentiment-img1.oss-cn-hangzhou.aliyuncs.com/2017/04/14/1492182803618.png)
 
 
-- ###### 根据echarts option参数来生成图片，这里echarts的版本为3.5.3
+###### 根据echarts option参数来生成图片，这里echarts的版本为3.5.3
+
 请求实例：
 ```
 curl http://115.29.188.241:3100/ -d '{"echartsOption":{"tooltip":{"trigger":"item","formatter":"{a} <br/>{b}: {c} ({d}%)"},"legend":{"orient":"vertical","x":"left","data":["直接访问","邮件营销","联盟广告","视频广告","搜索引擎"]},"series":[{"name":"访问来源","type":"pie","radius":["50%","70%"],"avoidLabelOverlap":false,"label":{"normal":{"show":false,"position":"center"},"emphasis":{"show":true,"textStyle":{"fontSize":"30","fontWeight":"bold"}}},"labelLine":{"normal":{"show":false}},"data":[{"value":335,"name":"直接访问"},{"value":310,"name":"邮件营销"},{"value":234,"name":"联盟广告"},{"value":135,"name":"视频广告"},{"value":1548,"name":"搜索引擎"}]}]},"width":600,"height":400}'
